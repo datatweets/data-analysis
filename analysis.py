@@ -1,13 +1,13 @@
-import pandas as pd
+import pandas as pd #importing pandas library
 
 # Load data
-data = pd.read_csv('data.csv')
+data = pd.read_csv('data.csv') #`data.csv` is the file containing the data
 
 # Basic statistics
 summary = data.describe()
 
 # Correlation matrix
-correlation_matrix = data.corr()
+correlation_matrix = data.corr() #correlation matrix
 
 # Save results to files
 summary.to_csv('summary.csv')
